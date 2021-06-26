@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Answer 2</title>
+    <style>
+      body {
+        background-color: rgb(61, 59, 59);
+      }
+      h3 {
+        color: gold;
+        text-align: center;
+      }
+      .form {
+        padding: 20px;
+        background-color: rgb(79, 121, 134);
+        width: 40%;
+        height: 70%;
+        margin: 140px;
+        margin-left: 400px;
+        margin-top: 60px;
+        border-radius: 15px;
+        filter: drop-shadow(0 0 30px #3b597a);
+      }
+
+      .sub {
+        height: 47px;
+        width: 85%;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        margin-left: 28px;
+        background-color: #a6c0e4;
+        color: white;
+        border-radius: 5px;
+        border-color: #0b1e36;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 8px;
+      }
+      .sub:hover {
+        color: #ca738d;
+        background-color: #0b1e36;
+      }
+      .radio-btn {
+        padding: 20px;
+        margin-left: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 45px;
+        background-color: #dbdfe4;
+        border-radius: 5px;
+      }
+      .btn {
+        margin-left: 20px;
+      }
+      .btn1{
+        display: inline-block;
+        text-decoration: none;
+        color: rgb(66, 233, 16);
+        border: 1px solid #fff;
+        padding: 12px 34px;
+        font-size: 13px;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+        margin-left: 200px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        background-color: rgb(255, 94, 0);
+     }
+    .btn1:hover{
+        border: 2px solid #690881;
+        background: #292933;
+        transition: 1s;}
+      @media (max-width: 700px) {
+        .form {
+          width: 70%;
+          height: 70%;
+          margin: 30px;
+          margin-left: 40px;
+          margin-top: 30px;
+        }
+        .sub
+        {
+          width: 80%;
+        }
+        .btn1{
+          margin-top: 5px;
+          margin-left: 110px;
+          padding: 12px 34px;
+          font-size: small;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <h3>
+      Q2. Design a webpage that illustrates the use of the following form
+      controls: (i) input controls: check box, radio button, select box (ii)
+      buttons: submit and reset.
+    </h3>
+    <div class="form">
+      <form action="signup" method="post">
+        <div class="radio-btn">
+          Gender :<input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+          <input type="radio" id="other" name="gender" value="other" />
+          <label for="other">Other</label>
+        </div>
+        <div class="radio-btn">
+          Skill :
+          <input
+            type="checkbox"
+            id="skill 1"
+            name="skill1"
+            value="HTML"
+            class="btn"
+          />
+          <label for="skill 1">HTML</label>
+          <input type="checkbox" id="skill 2" name="skill 2" value="CSS" />
+          <label for="skill 2"> CSS</label>
+          <input
+            type="checkbox"
+            id="skill 3"
+            name="skill 3"
+            value="Javascript"
+          />
+          <label for="skill 3">Javascript</label>
+          <input type="checkbox" id="skill 4" name="skill 4" value="PHP" />
+          <label for="skill 3">PHP</label>
+        </div>
+        <div class="radio-btn">
+          <label for="Qualification">Qualification:</label>
+          <select name="Qualification" id="a">
+            <option value="Plus Two">Plus Two</option>
+            <option value="SSLC">SSLC</option>
+            <option value="Degree">Degree</option>
+            <option value="PG">PG</option>
+          </select>
+        </div>
+
+        <input class="sub" type="submit" name="G" value="Log In" />
+        <input class="sub" type="reset" name="G" value="Reset" />
+      </form>
+      <a href="Q3.html" class="btn1">NEXT</a>
+    </div>
+  </body>
+</html>
